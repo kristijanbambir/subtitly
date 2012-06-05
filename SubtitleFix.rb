@@ -44,9 +44,9 @@ end
 
 lines.each do |line|
   if line =~ /\d\d:\d\d:\d\d,\d\d\d\s-->\s\d\d:\d\d:\d\d,\d\d\d/ then
-    times = line.split(/-->/)
-    from = add_seconds(times[0].strip, offset)
-    to   = add_seconds(times[1].strip, offset)
+    times = line.split(/ --> /)
+    from = add_seconds(times[0], offset)
+    to   = add_seconds(times[1], offset)
     line.replace(from + " --> " + to)
   end
 end
