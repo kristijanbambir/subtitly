@@ -1,3 +1,8 @@
+# subtitly, fix unsynchronized SRT subtitles
+# version 1.0
+# (c) 2012 Kristijan Bambir [www.kristijanbambir.from.hr]
+# released under the MIT license
+
 # quit unless our script gets two command line arguments
 unless ARGV.length == 2
   puts "Invalid number of arguments.\n"
